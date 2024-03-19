@@ -46,10 +46,10 @@ const Header = () => {
                             </a>
                           </div>
                           <div className="cart-icon">
-                            <a href="cart.html">
+                            <NavLink to='/Cart'>
                               <img src="assets/images/cart-icon.png" alt="cart icon"/>
                               <span>3</span>
-                            </a>
+                              </NavLink>
                           </div>
                         </div>
                       </div>
@@ -110,10 +110,10 @@ const Header = () => {
 												</div>
 												
 												<div className="cart-icon">
-													<a href="cart.html">
+                          <NavLink to='/Cart'>
 														<img src="assets/images/cart-icon.png" alt="cart icon"/>
 														<span>3</span>
-													</a>
+                          </NavLink>
 												</div>
 											</div>
 										</div>
@@ -135,8 +135,10 @@ const Header = () => {
 				</div>
 			</div>
 		</div>
+   
       {/* Your mobile view code here */}
     </header>
+    
   );
 }
 

@@ -3,70 +3,8 @@ import React from 'react'
 function Influencers() {
   return (
     <>
-    <div className="mobile-sidebar">
-	<div className="mobile-sidebar-inner">
-		<div className="mobile-sidebar-innerflex">
-			<div className="msi-inner-top">
-				<button type="button" className="btn mobile-sidebar-closeBtn"><img src="assets/images/modal-close.png" alt="close icon"/></button>
-				<ul className="msi-menubar">
-					<li><a href="index.html">home</a></li>
-					<li className="mobile-menu-dropdown"><a href="#" className="mmd-link">my account <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-						<ul>
-							<li><a href="profile.html">Profile</a></li>
-							<li><a href="order-list.html">my orders</a></li>
-							<li><a href="wishlist.html">whislist</a></li>
-						</ul>
-					</li>
-					<li><a href="about.html">about us</a></li>
-					<li><a href="contact.html">contact us</a></li>
-					<li><a href="terms.html">terms & conditions</a></li>
-					<li><a href="feedback.html">feedback</a></li>
-					<li><a href="#">tell a friend</a></li>
-				</ul>
-				<div className="lang-notif">
-					<div className="lang-notif-inner">
-						<span>Language</span>
-						<span className="lang-switchlink"><a href="#">ar</a>/<a href="#">en</a></span> 
-					</div>
-					<div className="lang-notif-inner">
-						<span>notification</span>
-						<span className="lni-swicthes">
-							<div className="custom-control custom-switch">
-							  <label className="custom-control-label" htmlFor="customSwitch1">
-							  	 <input type="checkbox" className="custom-control-input" id="customSwitch1" checked/>
-							  	 <span className="custom-control-label-span"></span>
-							  </label>
-							</div>
-						</span> 
-					</div>
-					<div className="msi-logobar">
-						<img src="assets/images/main-logo.png" alt="brand logo"/>
-					</div>
-					<div className="msi-socialbar">
-						<ul>
-							<li><a href="javascript:void(0)"><img src="assets/images/twitter-blue.png" alt="twitter icon"/></a></li>
-							<li><a href="javascript:void(0)"><img src="assets/images/instagram-blue.png" alt="twitter icon"/></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div className="msi-inner-bottom">
-				<div className="msi-powerby-logobar">
-					<div className="msi-powerby-logobar-inner">
-						<img src="assets/images/msi-si-logo.png" alt="brand logo"/>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-{/* <!-- end mobile sidebar --> */}
-
-<div className="wrapper">
-
-	{/* <header className="sticky-top">
-	
-
+   <div className="wrapper">
+{/* <header className="sticky-top">
 	{/* <!-- start middle content --> */}
 	<section className="middle-content">
 		<div className="influencers-topbanner">

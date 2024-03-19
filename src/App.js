@@ -8,6 +8,8 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Feedback from './Components/Feedback';
 import Categorylist from './Components/Categorylist';
+import Cart from './Components/Cart';
+
 
 const App = () => {
   return (
@@ -20,9 +22,12 @@ const App = () => {
         <Route path="/influencers" element={<Influencers />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path ="/Cart"  element={<Cart/>}/>
         <Route path="/feedback" element={<Feedback />} />
       </Routes>
     </Router>
+   
+   
   );
 }
 
