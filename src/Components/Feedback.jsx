@@ -1,151 +1,80 @@
-import React, { useRef, useEffect } from 'react';
-import $ from 'jquery';
-
+import React, { useState } from 'react';
 function Feedback() {
-    const starRef = useRef(null);
+    const [activeStars, setActiveStars] = useState(0);
 
-  useEffect(() => {
-    $(starRef.current).find('i').click(function() {
-      if (this.value == this.maxLength) {
-        $(this).prevAll('i').addClass('active');
-        $(this).nextAll('i').removeClass('active');
-        $(this).toggleClass('active');
-      }
-    });
+    const handleStarClick = (index) => {
+        setActiveStars(index + 1);
+    };
 
-    $(starRef.current).find('i').hover(function() {
-      if (this.value == this.maxLength) {
-        $(this).prevAll('i').addClass('active');
-        $(this).nextAll('i').removeClass('active');
-        $(this).toggleClass('active');
-      }
-    });
-  }, []);
+    const handleStarHover = (index) => {
+        setActiveStars(index + 1);
+    };
 
-
-  return (
-    <>
-    <div className="mobile-sidebar">
-	<div className="mobile-sidebar-inner">
-		<div className="mobile-sidebar-innerflex">
-			<div className="msi-inner-top">
-				<button type="button" className="btn mobile-sidebar-closeBtn"><img src="assets/images/modal-close.png" alt="close icon"/></button>
-				<ul className="msi-menubar">
-					<li><a href="index.html">home</a></li>
-					<li className="mobile-menu-dropdown"><a href="#" className="mmd-link">my account <i className="fa fa-angle-down" aria-hidden="true"></i></a>
-						<ul>
-							<li><a href="profile.html">Profile</a></li>
-							<li><a href="order-list.html">my orders</a></li>
-							<li><a href="wishlist.html">whislist</a></li>
-						</ul>
-					</li>
-					<li><a href="about.html">about us</a></li>
-					<li><a href="contact.html">contact us</a></li>
-					<li><a href="terms.html">terms & conditions</a></li>
-					<li><a href="feedback.html" className="active">feedback</a></li>
-					<li><a href="#">tell a friend</a></li>
-				</ul>
-				<div className="lang-notif">
-					<div className="lang-notif-inner">
-						<span>Language</span>
-						<span className="lang-switchlink"><a href="#">ar</a>/<a href="#">en</a></span> 
-					</div>
-					<div className="lang-notif-inner">
-						<span>notification</span>
-						<span className="lni-swicthes">
-							<div className="custom-control custom-switch">
-							  <label className="custom-control-label" for="customSwitch1">
-							  	 <input type="checkbox" className="custom-control-input" id="customSwitch1" checked/>
-							  	 <span className="custom-control-label-span"></span>
-							  </label>
-							</div>
-						</span> 
-					</div>
-					<div className="msi-logobar">
-						<img src="assets/images/main-logo.png" alt="brand logo"/>
-					</div>
-					<div className="msi-socialbar">
-						<ul>
-							<li><a href="javascript:void(0)"><img src="assets/images/twitter-blue.png" alt="twitter icon"/></a></li>
-							<li><a href="javascript:void(0)"><img src="assets/images/instagram-blue.png" alt="twitter icon"/></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div className="msi-inner-bottom">
-				<div className="msi-powerby-logobar">
-					<div className="msi-powerby-logobar-inner">
-						<img src="assets/images/msi-si-logo.png" alt="brand logo"/>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-{/* <!-- end mobile sidebar --> */}
-
-<div className="wrapper">
-
-
-	{/* <!-- start middle content --> */} 
-	<section className="middle-content">
-		<div className="middle-100vh-content">
-			<div className="cred-forms-logo cfl-absolute">
-				<img src="assets/images/main-logo.png" alt="brand logo"/>
-			</div>
-			<div className="register common-credform-padding feedback-form">
-				<div className="register-inner">
-					<div className="container">
-						<div className="row">
-							<div className="col-12">
-								<div className="register-form feedback-form common-credform">
-									<div className="common-credform-inner">
-										<h3>TELL US YOUR FEEDBACK</h3>
-										<div className="feedback-star">
-											<div className="feedback-starflex">
-												<i className="fa fa-star-o active" aria-hidden="true"></i>
-												<i className="fa fa-star-o active" aria-hidden="true"></i>
-												<i className="fa fa-star-o active" aria-hidden="true"></i>
-												<i className="fa fa-star-o" aria-hidden="true"></i>
-												<i className="fa fa-star-o" aria-hidden="true"></i>
-											</div>
-										</div>
-										<form>
-											<div className="form-group">
-												<input type="text" name="name" placeholder="Name" className="form-control"/>
-											</div>
-											<div className="form-group">
-												<input type="text" name="phone" placeholder="Mobile" className="form-control"/>
-											</div>											
-											<div className="form-group">
-												<textarea type="textarea" name="comment" placeholder="Comment" className="form-control"></textarea>
-											</div>
-											<div className="common-credform-btns">
-												<div className="common-credform-loginbtns mb-0 comm-mob-sec">
-													<button type="button" className="btn login-btn" id="feedback_btn">
-														Next
-													</button>
-												</div>
-												<div className="common-credform-loginbtns mb-0 comm-desk-sec">
-													<div className="mb-0 mfc-formsend-btn">
-														<button type="button" className="btn feedback-mob-sendbtn" id="feedback_btn">Send</button>
-													</div>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	{/* <!-- end middle content -->
-
-	<!-- start main footer --> */}
-	<footer className="main-footer" id="contactus_sec">
+    return (
+        <>
+            <div className="mobile-sidebar">
+                
+            </div>
+            <div className="wrapper">
+                <section className="middle-content">
+                    <div className="middle-100vh-content">
+                        <div className="cred-forms-logo cfl-absolute">
+                            
+                        </div>
+                        <div className="register common-credform-padding feedback-form">
+                            <div className="register-inner">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-12">
+                                            <div className="register-form feedback-form common-credform">
+                                                <div className="common-credform-inner">
+                                                    <h3>TELL US YOUR FEEDBACK</h3>
+                                                    <div className="feedback-star">
+                                                        <div className="feedback-starflex">
+                                                            {[...Array(5)].map((_, index) => (
+                                                                <i
+                                                                    key={index}
+                                                                    className={`fa fa-star-o ${index < activeStars ? 'active' : ''}`}
+                                                                    onClick={() => handleStarClick(index)}
+                                                                    onMouseEnter={() => handleStarHover(index)}
+                                                                    onMouseLeave={() => setActiveStars(activeStars)}
+                                                                ></i>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                    <form>
+                                                        <div className="form-group">
+                                                            <input type="text" name="name" placeholder="Name" className="form-control"/>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <input type="text" name="phone" placeholder="Mobile" className="form-control"/>
+                                                        </div>
+                                                        <div className="form-group">
+                                                            <textarea type="textarea" name="comment" placeholder="Comment" className="form-control"></textarea>
+                                                        </div>
+                                                        <div className="common-credform-btns">
+                                                            <div className="common-credform-loginbtns mb-0 comm-mob-sec">
+                                                                <button type="button" className="btn login-btn" id="feedback_btn">
+                                                                    Next
+                                                                </button>
+                                                            </div>
+                                                            <div className="common-credform-loginbtns mb-0 comm-desk-sec">
+                                                                <div className="mb-0 mfc-formsend-btn">
+                                                                    <button type="button" className="btn feedback-mob-sendbtn" id="feedback_btn">Send</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer className="main-footer" id="contactus_sec">
 		<div className="mf-top">
 			<div className="container">
 				<div className="row">
@@ -238,20 +167,14 @@ function Feedback() {
 				</div>
 			</div>
 		</div>
-	</footer>
-	{/* <!-- end main footer -->
-
-	<!-- scroll top icon --> */}
-	<div className="scroll-top"> 
-		<a className="scrollToTop" href="#"> 
-		<i className="fa fa-angle-up" aria-hidden="true"></i></a> 
-	</div>
-	{/* <!-- end scroll top icon --> */}
-    
-</div>
-    
-    </>
-  )
+ 	</footer>
+        <div className="scroll-top">
+                    <a className="scrollToTop" href="#">
+                    <i className="fa fa-angle-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </>
+    );
 }
-
-export default Feedback
+export default Feedback;
