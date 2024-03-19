@@ -5,6 +5,7 @@ function About() {
     <>
  <div className="wrapper">
 {/* <!-- end main header -->
+
 <!-- start middle content --> */}
 	<section className="middle-content">
 		<div className="middle-100vh-content">

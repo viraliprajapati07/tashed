@@ -1,5 +1,6 @@
 import React ,{useEffect} from 'react'
 import { Link } from 'react-router-dom';
+
 import Swiper from 'swiper';
 
 function Home() {
@@ -29,9 +30,13 @@ function Home() {
 {/* <!-- start middle content --> */} 
 	<section className="middle-content">
 		<div className="banner">
-			<div className="swiper banner-inner banner-carousel">
-				<div className="common-slick-slide swiper-wrapper">
-					<div className="swiper-slide banner-item">
+			<div className="swiper banner-inner banner-carousel swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden">
+				<div className="common-slick-slide swiper-wrapper"
+				id="swiper-wrapper-3d485f5c3522fdcf" aria-live="off"
+				style={{cursor:'grab', transitionDuration:'0ms', transform: 'translate3d(-2992px, 0px, 0px)', transitionDelay: '0ms'}}
+				>
+					<div className="swiper-slide banner-item swiper-slide-next" role='group' aria-label='/3' data-swiper-slide-index=""
+					style= {{width : '1496px'}}>
 						<div className="banner-image">
 							<img src="assets/images/banner.png" alt="banner"/>
 						</div>
@@ -50,7 +55,8 @@ function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="swiper-slide banner-item">
+					<div className="swiper-slide banner-item swiper-slide-prev" role='group' aria-label='/3' data-swiper-slide-index=""
+					style= {{width : '1496px'}}>
 						<div className="banner-image">
 							<img src="assets/images/banner2.png" alt="banner"/>
 						</div>
@@ -69,8 +75,8 @@ function Home() {
 							</div>
 						</div>
 					</div>
-					<div className="swiper-slide banner-item">
-						<div className="banner-image">
+					<div className="swiper-slide banner-item swiper-slide-active" role='group' aria-label='/3' data-swiper-slide-index=""
+					style= {{width : '1496px'}}>						<div className="banner-image">
 							<img src="assets/images/banner.png" alt="banner"/>
 						</div>
 						<div className="banner-data">
@@ -132,11 +138,11 @@ function Home() {
 							</a>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+							<Link to='/Influencers'>
 								<div className="influencers-img">
 									<img src="assets/images/influencers-5.png" alt="influencers image"/>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
 							<a href="influencers.html">
@@ -177,7 +183,9 @@ function Home() {
 				</div>
 				<div className="swiper product-sliding product-common-swiper">
 					<div className="row common-slick-slide swiper-wrapper">
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+					<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitemcol-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active 
+					"role="group" aria-label='1 / 5 '
+					 style={{width : "255px", marginRight:"30px"}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-1.png" alt="product image"/>
@@ -225,7 +233,9 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitemcol-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active 
+						"role="group" aria-label='2 / 5 ' 
+						style={{width : "255px", marginRight:"30px"}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-2.png" alt="product image"/>
@@ -273,7 +283,9 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitemcol-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active 
+						"role="group" aria-label='3 / 5 ' 
+						style={{width : "255px", marginRight:"30px"}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-3.png" alt="product image"/>
@@ -321,7 +333,9 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitemcol-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active 
+						"role="group" aria-label='4 / 5 ' 
+						style={{width : "255px", marginRight:"30px"}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-4.png" alt="product image"/>
@@ -369,8 +383,9 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
-							<div className="product-box">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitemcol-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active 
+						"role="group" aria-label='5 / 5 ' 
+						style={{width : "255px", marginRight:"30px"}}>							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-4.png" alt="product image"/>
 								</div>
@@ -442,7 +457,8 @@ function Home() {
 				</div>
 				<div className="swiper product-sliding product-common-swiper">
 					<div className="row common-slick-slide swiper-wrapper">
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active"
+						 role ='group' aria-label='1 /5 ' style={{width:'255px', marginRight:'30px'}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-5.png" alt="product image"/>
@@ -490,7 +506,8 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-next"
+						 role ='group' aria-label='2 / 5 ' style={{width:'255px', marginRight:'30px'}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-6.png" alt="product image"/>
@@ -538,7 +555,8 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+						 role ='group' aria-label='3 /5 ' style={{width:'255px', marginRight:'30px'}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-7.png" alt="product image"/>
@@ -586,7 +604,8 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+						 role ='group' aria-label='4 /5 ' style={{width:'255px', marginRight:'30px'}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-8.png" alt="product image"/>
@@ -634,7 +653,8 @@ function Home() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+						 role ='group' aria-label=' 5 /5 ' style={{width:'255px', marginRight:'30px'}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-8.png" alt="product image"/>
