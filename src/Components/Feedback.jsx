@@ -216,8 +216,8 @@ function Feedback() {
 										<div className="feedback-star">
 											<div className="feedback-starflex">
 												<i className="fa fa-star-o active" aria-hidden="true"></i>
-												<i className="fa fa-star-o" aria-hidden="true"></i>
-												<i className="fa fa-star-o" aria-hidden="true"></i>
+												<i className="fa fa-star-o active" aria-hidden="true"></i>
+												<i className="fa fa-star-o active" aria-hidden="true"></i>
 												<i className="fa fa-star-o" aria-hidden="true"></i>
 												<i className="fa fa-star-o" aria-hidden="true"></i>
 											</div>
