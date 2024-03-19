@@ -7,6 +7,7 @@ import Influencers from './Components/Influencers';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Feedback from './Components/Feedback';
+import Categorylist from './Components/Categorylist';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/Categorylist' element= {<Categorylist/>}/>
         <Route path="/profile" element={<Profile />} />
         <Route path="/influencers" element={<Influencers />} />
         <Route path="/about" element={<About />} />

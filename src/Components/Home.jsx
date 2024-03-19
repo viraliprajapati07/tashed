@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 function Home() {
 
 
@@ -68,10 +68,7 @@ function Home() {
 
 <div className="wrapper">
 
-
-	
-
-	{/* <!-- start middle content --> */} 
+{/* <!-- start middle content --> */} 
 	<section className="middle-content">
 		<div className="banner">
 			<div className="swiper banner-inner banner-carousel">
@@ -769,42 +766,44 @@ function Home() {
 							<div className="row">
 								<div className="col-lg-6 col-md-6 col-sm-12 col-12 cm-col-100">
 									<div className="home-catname">
-										<a href="category-list.html">
+										{/* <a href="Category-list"> */}
+										<Link to='/Categorylist'>
 											<div className="home-catimg">
-												<img src="assets/images/cat-back-1.png" alt="category image"/>
+												<img src="assets/images/cat-back-1.png" alt="category image" />
 												<h4>MATRIAL</h4>
 											</div>
-										</a>
+										</Link>
+										{/* </a> */}
 			 						</div>
 								</div>
 								<div className="col-lg-6 col-md-6 col-sm-12 col-12 cm-col-100">
 									<div className="home-catname">
-										<a href="category-list.html">
+									<Link to='/Categorylist'>
 											<div className="home-catimg">
 												<img src="assets/images/cat-back-2.png" alt="category image"/>
 												<h4>TOOLS</h4>
 											</div>
-										</a>
+									</Link>
 			 						</div>
 								</div>
 								<div className="col-lg-6 col-md-6 col-sm-12 col-12 cm-col-100">
 									<div className="home-catname">
-										<a href="category-list.html">
+									<Link to='/Categorylist'>
 											<div className="home-catimg">
 												<img src="assets/images/cat-back-3.png" alt="category image"/>
 												<h4>ASMENT</h4>
 											</div>
-										</a>
+									</Link>
 			 						</div>
 								</div>
 								<div className="col-lg-6 col-md-6 col-sm-12 col-12 cm-col-100">
 									<div className="home-catname">
-										<a href="category-list.html">
+									<Link to='/Categorylist'>
 											<div className="home-catimg">
 												<img src="assets/images/cat-back-4.png" alt="category image"/>
 												<h4>WOOD</h4>
 											</div>
-										</a>
+									</Link>
 			 						</div>
 								</div>
 							</div>
