@@ -120,7 +120,7 @@ function Payment() {
 					<div className="col-12">
 						<div className="common-credform-btns">
 							<div className="cart-view-btngroup mob-cartview-btn">
-								<button type="button" className="btn login-btn" id="cart_continue_shopbtn" style={{marginRight:'15px'}}>Continue Shopping</button>
+								<Link to='/Category'><button type="button" className="btn login-btn" id="cart_continue_shopbtn" style={{marginRight:'15px'}}>Continue Shopping</button></Link>
 								<Link to='/Orderhistory'><button type="button" className="btn login-btn" id="cart_paymentnextbtn">Next</button></Link>
 							</div>
 						</div>

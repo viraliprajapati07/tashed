@@ -13,6 +13,8 @@ import Wishlist from './Components/Whishlist'
 import Register from './Components/Register';
 import Payment from './Components/Payment';
 import Orderhistory  from './Components/Orderhistory'
+import Category from './Components/Category';
+
 
 const App = () => {
   return (
@@ -26,6 +28,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path ="/Cart"  element={<Cart/>}/>
+        <Route path ="/Category"  element={<Category/>}/>
         <Route path ="/Register"  element={<Register/>}/>
         <Route path ="/Payment"  element={<Payment/>}/>
         <Route path ="/Orderhistory"  element={<Orderhistory/>}/>

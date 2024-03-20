@@ -1,28 +1,11 @@
 import React ,{useEffect} from 'react'
 import { Link } from 'react-router-dom';
-
-import Swiper from 'swiper';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './Slide.css'; 
 
 function Home() {
-	useEffect(() => {
-        const bannerSwiper = new Swiper(".banner-carousel", {
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        return () => {
-            bannerSwiper.destroy();
-        };
-    }, []);
-
-  return (
+ return (
 <>
 <div className="home">
 <div className="wrapper">
@@ -30,74 +13,62 @@ function Home() {
 {/* <!-- start middle content --> */} 
 	<section className="middle-content">
 		<div className="banner">
-			<div className="swiper banner-inner banner-carousel swiper-initialized swiper-horizontal swiper-free-mode swiper-backface-hidden">
-				<div className="common-slick-slide swiper-wrapper"
-				id="swiper-wrapper-3d485f5c3522fdcf" aria-live="off"
-				style={{cursor:'grab', transitionDuration:'0ms', transform: 'translate3d(-2992px, 0px, 0px)', transitionDelay: '0ms'}}
-				>
-					<div className="swiper-slide banner-item swiper-slide-next" role='group' aria-label='/3' data-swiper-slide-index=""
-					style= {{width : '1496px'}}>
-						<div className="banner-image">
-							<img src="assets/images/banner.png" alt="banner"/>
-						</div>
-						<div className="banner-data">
-							<div className="banner-datainner">
-								<h1>ALL YOU NEED TO START<br/>YOUR DREAM HOME</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+
+	<Carousel
+      autoPlay
+      infiniteLoop
+      interval={2000} 
+      showThumbs={false}
+      showStatus={false}
+    >
+      <div className="slide">
+        <img src="assets/images/banner.png" alt="Banner 1" />
+        <div className="text-overlay">
+          <h1>ALL YOU NEED TO START <br/> YOUR DREAM HOME</h1>
+          <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
+									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat<br/>
+									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
+									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
 									consequat, vel illum dolore eu feugiat
-								</p>
-								<a href="javascript: void(0)" className="banner-btn">Start Shopping</a>
-							</div>
-						</div>
-					</div>
-					<div className="swiper-slide banner-item swiper-slide-prev" role='group' aria-label='/3' data-swiper-slide-index=""
-					style= {{width : '1496px'}}>
-						<div className="banner-image">
-							<img src="assets/images/banner2.png" alt="banner"/>
-						</div>
-						<div className="banner-data">
-							<div className="banner-datainner">
-								<h1>ALL YOU NEED TO START<br/>YOUR DREAM HOME</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+          </p>
+          <button className='b'>Start Shopping</button>
+        </div>
+      </div>
+      <div className="slide">
+        <img src="assets/images/banner2.png" alt="Banner 2" />
+        <div className="text-overlay">
+          <h1>ALL YOU NEED TO START <br/>YOUR DREAM HOME</h1>
+          <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
+									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat<br/>
+									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
+									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
 									consequat, vel illum dolore eu feugiat
-								</p>
-								<a href="javascript: void(0)" className="banner-btn">Start Shopping</a>
-							</div>
-						</div>
-					</div>
-					<div className="swiper-slide banner-item swiper-slide-active" role='group' aria-label='/3' data-swiper-slide-index=""
-					style= {{width : '1496px'}}>						<div className="banner-image">
-							<img src="assets/images/banner.png" alt="banner"/>
-						</div>
-						<div className="banner-data">
-							<div className="banner-datainner">
-								<h1>ALL YOU NEED TO START<br/>YOUR DREAM HOME</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+          </p>
+          <button className='b'>Start Shopping</button>
+        </div>
+      </div>
+      <div className="slide">
+        <img src="assets/images/banner.png" alt="Banner 3" />
+        <div className="text-overlay">
+          <h1>ALL YOU NEED TO START 
+          <br/>YOUR DREAM HOME</h1>
+          <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
+									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam <br/>
+									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
+									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
 									consequat, vel illum dolore eu feugiat
-								</p>
-								<a href="javascript: void(0)" className="banner-btn">Start Shopping</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="swiper-pagination"></div>
-			</div>
-		</div>
+          </p>
+          <button className='b'>Start Shopping</button>
+        </div>
+      </div>
+    </Carousel>
+	</div>
 		<div className="influencers product-slider comm-desk-sec">
 			<div className="container">
 				<div className="row">

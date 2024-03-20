@@ -273,8 +273,8 @@ function Cart() {
 						</div>
 						<div className="common-credform-btns">
 							<div className="cart-view-btngroup">
-								
-								<button type="button" className="btn login-btn" id="cart_continue_shopbtn" style={{marginRight:'15px'}}>Continue Shopping</button>
+								<Link to='/Category'>
+								<button type="button" className="btn login-btn" id="cart_continue_shopbtn" style={{marginRight:'15px'}}>Continue Shopping</button></Link>
 								<Link to='/Register'>
 								<button type="button" className="btn login-btn" id="cart_nextbtn">Next</button></Link>
 							</div>
