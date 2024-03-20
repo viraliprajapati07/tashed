@@ -1,6 +1,46 @@
-import React from 'react'
-
+import React, {useState}from 'react'
+import { Link } from 'react-router-dom';
 function Cart() {
+	const [quantity1, setQuantity1] = useState(1);
+	const [quantity2, setQuantity2] = useState(1);
+	const [quantity3, setQuantity3] = useState(1);
+  
+	const decrement1 = () => {
+	  if (quantity1 > 0) {
+		setQuantity1(quantity1 - 1);
+	  }
+	};
+  
+	const increment1 = () => {
+	  if (quantity1 < 99) {
+		setQuantity1(quantity1 + 1);
+	  }
+	};
+  
+	const decrement2 = () => {
+	  if (quantity2 > 0) {
+		setQuantity2(quantity2 - 1);
+	  }
+	};
+  
+	const increment2 = () => {
+	  if (quantity2 < 99) {
+		setQuantity2(quantity2 + 1);
+	  }
+	};
+  
+	const decrement3 = () => {
+	  if (quantity3 > 0) {
+		setQuantity3(quantity3 - 1);
+	  }
+	};
+  
+	const increment3 = () => {
+	  if (quantity3 < 99) {
+		setQuantity3(quantity3 + 1);
+	  }
+	};
+  
   return (
     <>
 <div className="wrapper">
@@ -76,9 +116,9 @@ function Cart() {
 														</div>
 														<div className="pro-quantity">
 															<div className="quantity">
-																<button type="button" className="quantity-minus">-</button>	
-																	<input type="number" id="quantity_count" className="input-text qty" step="1" min="0" max="99" name="qty-count" value="1" title="" size="4" placeholder="" inputmode="numeric"/>
-																<button type="button" className="quantity-plus">+</button>	
+																<button type="button" className="quantity-minus" onClick={decrement1}>-</button>	
+																	<input type="number" id="quantity_count" className="input-text qty" step="1" min="0" max="99" name="qty-count" value={quantity1} title="" size="4" placeholder="" inputmode="numeric"/>
+																<button type="button" className="quantity-plus" onClick={increment1}>+</button>	
 															</div>
 														</div>
 													</div>
@@ -134,9 +174,9 @@ function Cart() {
 														</div>
 														<div className="pro-quantity">
 															<div className="quantity">
-																<button type="button" className="quantity-minus">-</button>	
-																	<input type="number" id="quantity_count" className="input-text qty" step="1" min="0" max="99" name="qty-count" value="1" title="" size="4" placeholder="" inputmode="numeric"/>
-																<button type="button" className="quantity-plus">+</button>	
+																<button type="button" className="quantity-minus" onClick={decrement2}>-</button>	
+																	<input type="number" id="quantity_count" className="input-text qty" step="1" min="0" max="99" name="qty-count" value={quantity2} title="" size="4" placeholder="" inputmode="numeric"/>
+																<button type="button" className="quantity-plus" onClick={increment2}>+</button>	
 															</div>
 														</div>
 													</div>
@@ -192,9 +232,9 @@ function Cart() {
 														</div>
 														<div className="pro-quantity">
 															<div className="quantity">
-																<button type="button" className="quantity-minus">-</button>	
-																	<input type="number" id="quantity_count" className="input-text qty" step="1" min="0" max="99" name="qty-count" value="1" title="" size="4" placeholder="" inputmode="numeric"/>
-																<button type="button" className="quantity-plus">+</button>	
+																<button type="button" className="quantity-minus" onClick={decrement3}>-</button>	
+																	<input type="number" id="quantity_count" className="input-text qty" step="1" min="0" max="99" name="qty-count" value={quantity3} title="" size="4" placeholder="" inputmode="numeric"/>
+																<button type="button" className="quantity-plus" onClick={increment3}>+</button>	
 															</div>
 														</div>
 													</div>
@@ -233,8 +273,10 @@ function Cart() {
 						</div>
 						<div className="common-credform-btns">
 							<div className="cart-view-btngroup">
-								<button type="button" className="btn login-btn" id="cart_continue_shopbtn">Continue Shopping</button>
-								<button type="button" className="btn login-btn" id="cart_nextbtn">Next</button>
+								
+								<button type="button" className="btn login-btn" id="cart_continue_shopbtn" style={{marginRight:'15px'}}>Continue Shopping</button>
+								<Link to='/Register'>
+								<button type="button" className="btn login-btn" id="cart_nextbtn">Next</button></Link>
 							</div>
 						</div>
 					</div>
@@ -260,7 +302,9 @@ function Cart() {
 				</div>
 				<div className="swiper product-sliding product-common-swiper">
 					<div className="row common-slick-slide swiper-wrapper">
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+					<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+							role="group" aria-label=" 4 / 5" style={{width:'255px', marginRight:'30px'}}>
+
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-1.png" alt="product image"/>
@@ -310,7 +354,9 @@ function Cart() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+							role="group" aria-label=" 4 / 5" style={{width:'255px', marginRight:'30px'}}>
+
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-2.png" alt="product image"/>
@@ -360,7 +406,9 @@ function Cart() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+							role="group" aria-label=" 4 / 5" style={{width:'255px', marginRight:'30px'}}>
+
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-3.png" alt="product image"/>
@@ -410,7 +458,9 @@ function Cart() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+							role="group" aria-label=" 4 / 5" style={{width:'255px', marginRight:'30px'}}>
+
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-4.png" alt="product image"/>
@@ -460,7 +510,9 @@ function Cart() {
 								</div>
 							</div>
 						</div>
-						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem">
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem"
+							role="group" aria-label=" 4 / 5" style={{width:'255px', marginRight:'30px'}}>
+
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-4.png" alt="product image"/>

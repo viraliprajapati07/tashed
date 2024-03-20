@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 import Header from './Components/Header';
-import Home from './Components/Home'
+import Home from './Components/Home';
 import Profile from './Components/Profile';
 import Influencers from './Components/Influencers';
 import About from './Components/About';
@@ -9,7 +9,10 @@ import Contact from './Components/Contact';
 import Feedback from './Components/Feedback';
 import Categorylist from './Components/Categorylist';
 import Cart from './Components/Cart';
-
+import Wishlist from './Components/Whishlist'
+import Register from './Components/Register';
+import Payment from './Components/Payment';
+import Orderhistory  from './Components/Orderhistory'
 
 const App = () => {
   return (
@@ -23,6 +26,10 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path ="/Cart"  element={<Cart/>}/>
+        <Route path ="/Register"  element={<Register/>}/>
+        <Route path ="/Payment"  element={<Payment/>}/>
+        <Route path ="/Orderhistory"  element={<Orderhistory/>}/>
+        <Route path ="/Wishlist"  element={<Wishlist/>}/>
         <Route path="/feedback" element={<Feedback />} />
       </Routes>
     </Router>

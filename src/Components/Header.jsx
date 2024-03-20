@@ -1,5 +1,5 @@
 import React from 'react';
-import {  NavLink } from 'react-router-dom';
+import {  Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -41,9 +41,9 @@ const Header = () => {
                             </ul>
                           </div>
                           <div className="fav-pro">
-                            <a href="wishlist.html">
+                            <Link  to="/Wishlist">
                               <img src="assets/images/fav-star.png" alt="fav star icon"/>
-                            </a>
+                            </Link>
                           </div>
                           <div className="cart-icon">
                             <NavLink to='/Cart'>
