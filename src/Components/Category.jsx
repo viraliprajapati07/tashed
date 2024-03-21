@@ -1,9 +1,88 @@
-import React from 'react'
+
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Slide.css';
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 function Category() {
+
+	const slides = [
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+		{
+		  imgSrc: 'assets/images/cat-background.png',
+		  title: 'STRUCTURE MATERIAL',
+		},
+	  ];
+	  const [activeSlide, setActiveSlide] = useState(0);
+	
+	  useEffect(() => {
+		const interval = setInterval(() => {
+		  setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+		}, 5000); // Change slide every 5 seconds
+	
+		return () => clearInterval(interval);
+	  }, []);
+
+
   return (
     <>
     
@@ -67,106 +146,25 @@ function Category() {
     </Carousel>
 </div>
 </section>
-<div className="catg-slider">
-			<div className="container-fluid p-0">
-				<div className="row">
-					<div className="col-12">
-						<div className="catg-sliderinner swiper">
-							 <div className="swiper-wrapper">
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-							<div className="catg-sliderbox swiper-slide">
-								<a href="javascript:void(0)" className="catg-boxlink">
-									<div className="catg-img">
-										<img src="assets/images/cat-background.png" alt="category background image"/>
-									</div>
-									<h5>STRUCTURE MATERIAL</h5>
-								</a>
-							</div>
-						</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+
+<div className="auto-slider" style={{ position: 'relative', width: '100%', overflow: 'hidden' }}>
+      <div className="slider-wrapper" style={{ display: 'flex', transition: 'transform 0.5s', transform: `translateX(-${(activeSlide * (120 + 25))}px)` }}>
+        {slides.map((slide, index) => (
+          <div key={index} className={`slide`} style={{ flex: '0 0 120px', marginRight: '25px', marginTop: '20px' }}>
+            <a href="javascript:void(0)" className="catg-boxlink">
+              <div className="catg-img" style={{ width: '200px', height: '90px', position: 'relative', borderRadius: '10px', overflow: 'hidden' }}>
+                <img src={slide.imgSrc} alt="category background image" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px' }} />
+                <h5 style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', color: 'white', textAlign: 'center' }}>{slide.title}</h5>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+
+
 		<div className="container">
 			<div className="row">
 				<div className="col-12">

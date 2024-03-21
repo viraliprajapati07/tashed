@@ -25,7 +25,7 @@ import Changephone from './Components/Changephone';
 import Editadd from './Components/Editadd';
 import Login from './Components/Login';
 import Forgotpass from './Components/Forgotpass';
-
+import New from './Components/New';
 
 
 const App = () => {
