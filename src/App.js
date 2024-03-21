@@ -27,9 +27,10 @@ import Login from './Components/Login';
 import Forgotpass from './Components/Forgotpass';
 
 
+
 const App = () => {
   return (
-    
+  
     <Router>
       <Header />
       <Routes>

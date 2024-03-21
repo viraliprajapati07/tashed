@@ -117,9 +117,11 @@ function Home() {
 						</div>
 						<div className="swiper-slide influencers-boxcol">
 							<a href="influencers.html">
+							<Link to='/Influencers'>
 								<div className="influencers-img">
 									<img src="assets/images/influencers-5.png" alt="influencers image"/>
 								</div>
+							</Link>
 							</a>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
@@ -884,84 +886,84 @@ function Home() {
 				<div className="swiper product-common-swiper influencers-sliding">
 					<div className="common-slick-slide swiper-wrapper">
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html" className="influencers-link">
+							<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-1.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+						<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-2.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+						<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-3.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+						<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-4.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+						<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-5.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+						<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-1.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+						<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-2.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 						<div className="swiper-slide influencers-boxcol">
-							<a href="influencers.html">
+						<Link to='/Influencers' className="influencers-link">
 								<div className="influencers-img">
 									<img src="assets/images/influencers-3.png" alt="influencers image"/>
 								</div>
 								<div className="influencers-name">
 									<h4>Influencers</h4>
 								</div>
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className="swiper-button-prev common-swipercontrol-btn"></div>

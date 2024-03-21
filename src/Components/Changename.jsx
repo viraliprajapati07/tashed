@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
 function Changename() {
   return (
     <>
@@ -140,12 +139,8 @@ function Changename() {
     <a className="scrollToTop" href="#"> 
     <i className="fa fa-angle-up" aria-hidden="true"></i></a> 
 </div>
-
-
 </div>
-    
-    </>
+ </>
   )
 }
-
 export default Changename
