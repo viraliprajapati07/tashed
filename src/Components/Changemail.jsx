@@ -1,94 +1,37 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-function Profile() {
+function Changemail() {
   return (
     <>
 <div className="wrapper">
-<section className="middle-content">
-		<div className="cs-breadcrumb comm-mob-sec">
-			<div className="container">
-				<div className="row">
-					<div className="col-12">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>Profile</li>
-						</ul>
-					</div>
-				</div>
+    <section className="middle-content">
+		<div className="middle-100vh-content">
+			<div className="cred-forms-logo cfl-absolute">
+				<img src="assets/images/main-logo.png" alt="brand logo"/>
 			</div>
-		</div>
-		<div className="main-profile-sec">
-			<div className="profile-sec-inner">
-				<div className="container">
-					<div className="row">
-						<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
-							
-								<div className="profile-sec-innerdata">
-								<Link to='/Orderlist'>
-									<div className="mpsi-leftbar"><img src="assets/images/parcel-icon.png" alt="icon"/></div>
-									<div className="mpsi-rightbar"><h4>Your Orders</h4><p>Check status of your order</p></div>
-								</Link>
+			<div className="forgot-password common-credform-padding">
+				<div className="login-inner">
+					<div className="container">
+						<div className="row">
+							<div className="col-12">
+								<div className="forgot-password-form common-credform">
+									<div className="common-credform-inner">
+										<h3>change email</h3>
+										<form>
+											<div className="form-group">
+												<input type="email" name="phone" placeholder="Email" className="form-control" value="vishal.vnerds@gmail.com"/>
+											</div>
+											<div className="common-credform-btns">
+												<div className="common-credform-loginbtns mb-0">
+												<Link to='/Profileinfo'>	<button type="button" className="btn registration-nextbtn login-btn" id="update_email_btn">
+														Update
+													</button></Link>
+												</div>
+											</div>
+										</form>
+									</div>
 								</div>
-							
-						</div>
-						<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
-							
-								<div className="profile-sec-innerdata">
-								<Link to='/Orderlist'>
-									<div className="mpsi-leftbar"><img src="assets/images/wishlist-icon.png" alt="icon"/></div>
-									<div className="mpsi-rightbar"><h4>Your Wishlist</h4><p>Check wishlist of your order</p></div>
-								</Link>
-								</div>
-
-							
-						</div>
-						<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
-							
-								<div className="profile-sec-innerdata">
-									<Link to='/Profileinfo'>
-									<div className="mpsi-leftbar"><img src="assets/images/user-icon.png" alt="icon"/></div>
-									<div className="mpsi-rightbar"><h4>Profile Info</h4><p>Edit your profile info</p></div>
-									</Link>
-								</div>
-							
-						</div>
-						<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
-							
-								<div className="profile-sec-innerdata">
-								<Link to='/Address'>
-									<div className="mpsi-leftbar"><img src="assets/images/address-icon.png" alt="icon"/></div>
-									<div className="mpsi-rightbar"><h4>Your Addresses</h4><p>Edit address for your order</p></div>
-								</Link>
-								</div>
-							
-						</div>
-						<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
-							
-								<div className="profile-sec-innerdata">
-								<Link to='/Changepass'>
-									<div className="mpsi-leftbar"><img src="assets/images/login-icon.png" alt="icon"/></div>
-									<div className="mpsi-rightbar"><h4>Login & Security</h4><p>Change password</p></div>
-								</Link>
-								</div>
-							
-						</div>
-						<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
-							<Link to='/profile'>
-								<div className="profile-sec-innerdata">
-									<div className="mpsi-leftbar"><img src="assets/images/receive-mail.png" alt="icon"/></div>
-									<div className="mpsi-rightbar"><h4>Inbox</h4><p>Notification & Messages</p></div>
-								</div>
-							</Link>
-						</div>
-						<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
-						
-							<div className="profile-sec-innerdata">
-							<Link to='/profile'>
-								<div className="mpsi-leftbar"><img src="assets/images/debit-card.png" alt="icon"/></div>
-								<div className="mpsi-rightbar"><h4>Credit</h4><p><span className="d-inline-block">Used Credit:</span> <b>10 KD</b></p><p><span className="d-inline-block">Remaining Credit: </span><b>20 KD</b></p></div>
-						    </Link>
-							</div>	
-							
+							</div>
 						</div>
 					</div>
 				</div>
@@ -166,7 +109,7 @@ function Profile() {
 							<p>Store address, Street, Buliding, Office 1012</p>
 							<div className="mfc-mapinner">
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27814.41193999645!2d47.961267178803226!3d29.37610101465698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fcf9c83ce455983%3A0xc3ebaef5af09b90e!2sKuwait%20City%2C%20Kuwait!5e0!3m2!1sen!2sin!4v1684418108436!5m2!1sen!2sin" 
-                                style={{border:'0', allowFullScreen:'', loading:'lazy',referrerPolicy:'no-referrer-when-downgrade'}}></iframe>
+                                style={{border:'0' , allowfullscreen:"" ,loading:"lazy" ,referrerpolicy:"no-referrer-when-downgrade"}}></iframe>
 							</div>
 						</div>
 					</div>
@@ -193,12 +136,19 @@ function Profile() {
 			</div>
 		</div>
 	</footer>
+	{/* <!-- end main footer -->
+
+	<!-- scroll top icon --> */}
 	<div className="scroll-top"> 
 		<a className="scrollToTop" href="#"> 
 		<i className="fa fa-angle-up" aria-hidden="true"></i></a> 
 	</div>
+	
+
 </div>
- </>
+
+    </>
   )
 }
-export default Profile
+
+export default Changemail

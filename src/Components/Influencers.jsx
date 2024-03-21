@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Influencers() {
   return (
     <>
@@ -69,9 +69,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+												<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -118,9 +120,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -167,9 +171,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -216,9 +222,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -265,9 +273,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -339,9 +349,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -388,9 +400,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -437,9 +451,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -486,9 +502,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -535,9 +553,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -609,9 +629,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -658,9 +680,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -707,9 +731,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -756,9 +782,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -805,9 +833,11 @@ function Influencers() {
 										</div>
 										<div className="product-pricedata">
 											<div className="ppd-flex">
+											<Link to='/Cart'>
 												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 													<img src="assets/images/add-cart.png" alt="add cart icon"/>
 												</button>
+												</Link>
 												<button type="button" className="btn add-favBtn" id="add_favBtn">
 													 <i className="fa fa-star-o" aria-hidden="true"></i>
 												</button>
@@ -881,9 +911,11 @@ function Influencers() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
-										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
-											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+									<Link to='/Cart'>
+												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+													<img src="assets/images/add-cart.png" alt="add cart icon"/>
+												</button>
+												</Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -956,9 +988,11 @@ function Influencers() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
-										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
-											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+									<Link to='/Cart'>
+												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+													<img src="assets/images/add-cart.png" alt="add cart icon"/>
+												</button>
+												</Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1038,9 +1072,11 @@ function Influencers() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
-										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
-											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+									<Link to='/Cart'>
+												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+													<img src="assets/images/add-cart.png" alt="add cart icon"/>
+												</button>
+												</Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1113,9 +1149,11 @@ function Influencers() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
-										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
-											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+											<Link to='/Cart'>
+												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+													<img src="assets/images/add-cart.png" alt="add cart icon"/>
+												</button>
+												</Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1195,9 +1233,11 @@ function Influencers() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
-										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
-											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+									<Link to='/Cart'>
+												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+													<img src="assets/images/add-cart.png" alt="add cart icon"/>
+												</button>
+												</Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1270,9 +1310,11 @@ function Influencers() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
-										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
-											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+									    <Link to='/Cart'>
+												<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+													<img src="assets/images/add-cart.png" alt="add cart icon"/>
+												</button>
+										</Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>

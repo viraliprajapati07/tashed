@@ -1,78 +1,73 @@
 import React from 'react'
-
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './Slide.css';
+import { Link } from 'react-router-dom';
 function Category() {
   return (
     <>
     
     <div className="wrapper">
-
-		{/* <!-- start middle content --> */}
 	<section className="middle-content">
-		<div className="banner comm-mob-sec">
-			<div className="swiper banner-inner banner-carousel">
-				<div className="common-slick-slide swiper-wrapper">
-					<div className="swiper-slide banner-item">
-						<div className="banner-image">
-							<img src="assets/images/banner.png" alt="banner"/>
-						</div>
-						<div className="banner-data">
-							<div className="banner-datainner">
-								<h1>ALL YOU NEED TO START<br/>YOUR DREAM HOME</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+	<div className="banner">
+
+	<Carousel
+      autoPlay
+      infiniteLoop
+      interval={2000} 
+      showThumbs={false}
+      showStatus={false}
+    >
+      <div className="slide">
+        <img src="assets/images/banner.png" alt="Banner 1" />
+        <div className="text-overlay">
+          <h1>ALL YOU NEED TO START <br/> YOUR DREAM HOME</h1>
+          <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
+									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat<br/>
+									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
+									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
 									consequat, vel illum dolore eu feugiat
-								</p>
-								<a href="javascript: void(0)" className="banner-btn">Start Shopping</a>
-							</div>
-						</div>
-					</div>
-					<div className="swiper-slide banner-item">
-						<div className="banner-image">
-							<img src="assets/images/banner2.png" alt="banner"/>
-						</div>
-						<div className="banner-data">
-							<div className="banner-datainner">
-								<h1>ALL YOU NEED TO START<br/>YOUR DREAM HOME</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+          </p>
+          <button className='b'>Start Shopping</button>
+        </div>
+      </div>
+      <div className="slide">
+        <img src="assets/images/banner2.png" alt="Banner 2" />
+        <div className="text-overlay">
+          <h1>ALL YOU NEED TO START <br/>YOUR DREAM HOME</h1>
+          <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
+									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat<br/>
+									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
+									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
 									consequat, vel illum dolore eu feugiat
-								</p>
-								<a href="javascript: void(0)" className="banner-btn">Start Shopping</a>
-							</div>
-						</div>
-					</div>
-					<div className="swiper-slide banner-item">
-						<div className="banner-image">
-							<img src="assets/images/banner.png" alt="banner"/>
-						</div>
-						<div className="banner-data">
-							<div className="banner-datainner">
-								<h1>ALL YOU NEED TO START<br/>YOUR DREAM HOME</h1>
-								<p>
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+          </p>
+          <button className='b'>Start Shopping</button>
+        </div>
+      </div>
+      <div className="slide">
+        <img src="assets/images/banner.png" alt="Banner 3" />
+        <div className="text-overlay">
+          <h1>ALL YOU NEED TO START 
+          <br/>YOUR DREAM HOME</h1>
+          <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
+									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam <br/>
+									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
+									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
+									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
 									consequat, vel illum dolore eu feugiat
-								</p>
-								<a href="javascript: void(0)" className="banner-btn">Start Shopping</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="swiper-pagination"></div>
-			</div>
-		</div>
-		<div className="catg-slider">
+          </p>
+          <button className='b'>Start Shopping</button>
+        </div>
+      </div>
+    </Carousel>
+</div>
+</section>
+<div className="catg-slider">
 			<div className="container-fluid p-0">
 				<div className="row">
 					<div className="col-12">
@@ -225,9 +220,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+										<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -300,9 +296,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -375,9 +372,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -450,9 +448,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -483,7 +482,10 @@ function Category() {
 										</div>
 									</div>
 									<div className="pro-addcartbtn">
-										<button type="button" className="btn pro-addcart-btn" id="pro_addcart_btn">Add to cart</button>
+									<Link to='/Cart'>
+										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+											<img src="assets/images/add-cart.png" alt="add cart icon"/>
+										</button></Link>
 									</div>
 								</div>
 							</div>
@@ -525,9 +527,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -558,7 +561,10 @@ function Category() {
 										</div>
 									</div>
 									<div className="pro-addcartbtn">
-										<button type="button" className="btn pro-addcart-btn" id="pro_addcart_btn">Add to cart</button>
+										<Link to='/Cart'>
+										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+											<img src="assets/images/add-cart.png" alt="add cart icon"/>
+										</button></Link>
 									</div>
 								</div>
 							</div>
@@ -600,9 +606,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -675,9 +682,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -750,9 +758,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -825,9 +834,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -900,9 +910,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -975,9 +986,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1050,9 +1062,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1125,9 +1138,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1200,9 +1214,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1275,9 +1290,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1350,9 +1366,10 @@ function Category() {
 								</div>
 								<div className="product-pricedata comm-mob-sec">
 									<div className="ppd-flex">
+									<Link to='/Cart'>
 										<button type="button" className="btn add-cartBtn" id="add_cartBtn">
 											<img src="assets/images/add-cart.png" alt="add cart icon"/>
-										</button>
+										</button></Link>
 										<button type="button" className="btn add-favBtn" id="add_favBtn">
 											 <i className="fa fa-star-o" aria-hidden="true"></i>
 										</button>
@@ -1391,10 +1408,8 @@ function Category() {
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	{/* <!-- end middle content --> */}
-
+		</div> 
+{/* <!-- end middle content --> */}
 	{/* <!-- start main footer --> */}
 	<footer className="main-footer" id="contactus_sec">
 		<div className="mf-top">
@@ -1491,18 +1506,13 @@ function Category() {
 			</div>
 		</div>
 	</footer>
-	{/* <!-- end main footer -->
-
-	<!-- scroll top icon --> */}
 	<div className="scroll-top"> 
 		<a className="scrollToTop" href="#"> 
 		<i className="fa fa-angle-up" aria-hidden="true"></i></a> 
 	</div>
-	{/* <!-- end scroll top icon --> */}
-
+	
 </div>
-    
-    </>
+</>
   )
 }
 

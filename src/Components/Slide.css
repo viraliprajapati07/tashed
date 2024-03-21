@@ -12,12 +12,12 @@
   
   .text-overlay {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50px; /* Adjust the left offset as needed */
     transform: translateY(-50%);
-    background-color: rgba(247, 172, 32, 0.567);
+    background-color: rgba(247, 186, 32, 0.567);
     color: white;
-    padding: 50px 20px;
+    padding: 40px 20px;
   }
 .text-overlay h1 {
     color: #fff;
@@ -40,7 +40,7 @@
   }
 .b {
    /* display: inline-flex; */
-    background: #f7ce99;
+    background: #efede9;
     border-radius: 30px;
     min-width: 154px;
     height: 42px;
@@ -53,5 +53,3 @@
     /* line-height: 18px; */
     margin-top: 24px;
   }
-  
-  

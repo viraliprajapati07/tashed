@@ -154,9 +154,9 @@ function Home() {
 				</div>
 				<div className="swiper product-sliding product-common-swiper">
 					<div className="row common-slick-slide swiper-wrapper">
-					<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitemcol-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active 
-					"role="group" aria-label='1 / 5 '
-					 style={{width : "255px", marginRight:"30px"}}>
+						<div className="col-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitemcol-lg-3 col-md-3 col-sm-6 col-12 swiper-slide product-boxcol product-boxitem swiper-slide-active 
+						"role="group" aria-label='1 / 5 '
+					 	style={{width : "255px", marginRight:"30px"}}>
 							<div className="product-box">
 								<div className="product-img text-center">
 									<img src="assets/images/pro-1.png" alt="product image"/>
@@ -187,9 +187,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+											<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -237,9 +237,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -287,9 +287,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -337,9 +337,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -386,9 +386,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -460,9 +460,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -509,9 +509,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -558,9 +558,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -607,9 +607,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>
@@ -656,9 +656,9 @@ function Home() {
 									</div>
 									<div className="product-pricedata">
 										<div className="ppd-flex">
-											<button type="button" className="btn add-cartBtn" id="add_cartBtn">
+										<Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
 												<img src="assets/images/add-cart.png" alt="add cart icon"/>
-											</button>
+											</button></Link>
 											<button type="button" className="btn add-favBtn" id="add_favBtn">
 												 <i className="fa fa-star-o" aria-hidden="true"></i>
 											</button>

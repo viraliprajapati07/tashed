@@ -1,7 +1,12 @@
-import React from 'react';
-import {  Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import React, { useState } from 'react';
 
 const Header = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(prevState => !prevState);
+  };
   return (
     <header className="sticky-top">
       <div className="desktop-view-nav main-header">
@@ -30,16 +35,18 @@ const Header = () => {
                           <div className="language-switch">
                             <a href="#">AR</a> <span>/</span> <a href="#">EN</a>
                           </div>
-                          <div className="user-propic">
-                            <a href="#" className="user-droptoggle">
-                              <img src="assets/images/user-propic.png" alt="profile picture"/>
-                            </a>
-                            <ul className="user-dropdown">
-                              <li><a href="javascript:void(0)">Menu 1</a></li>
-                              <li><a href="javascript:void(0)">Menu 2</a></li>
-                              <li><a href="javascript:void(0)">Menu 3</a></li>
-                            </ul>
-                          </div>
+                        <div class="user-propic">
+													<a href="#" class="user-droptoggle"onClick={toggleDropdown}>
+														<img src="assets/images/user-propic.png" alt="profile picture"/>
+													</a>
+                          {isDropdownOpen && (
+													<ul class="user-dropdown" style={{display:" block"}}>
+														<li><a href="javascript:void(0)">Menu 1</a></li>
+														<li><a href="javascript:void(0)">Menu 2</a></li>
+														<li><a href="javascript:void(0)">Menu 3</a></li>
+													</ul>
+                          )}
+												</div>
                           <div className="fav-pro">
                             <Link  to="/Wishlist">
                               <img src="assets/images/fav-star.png" alt="fav star icon"/>

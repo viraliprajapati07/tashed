@@ -1,65 +1,86 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './Slide.css'; // Your custom CSS for styling
+import React, { useEffect } from 'react';
+import Swiper from 'swiper';
 
 const Slider = () => {
+  useEffect(() => {
+    const productSwiper = new Swiper('.product-common-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+    });
+
+    return () => {
+      productSwiper.destroy();
+    };
+  }, []);
+
   return (
-    <Carousel
-      autoPlay
-      infiniteLoop
-      interval={3000} // Change slides every 5 seconds
-      showThumbs={false}
-      showStatus={false}
-    >
-      <div className="slide">
-        <img src="assets/images/banner.png" alt="Banner 1" />
-        <div className="text-overlay">
-          <h1>ALL YOU NEED TO START <br/> YOUR DREAM HOME</h1>
-          <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat<br/>
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
-									consequat, vel illum dolore eu feugiat
-          </p>
-          <button className='b'>Start Shopping</button>
+    <div className="product-box">
+    <div className="product-img text-center">
+      <img src="assets/images/pro-1.png" alt="product image"/>
+    </div>
+    <div className="product-data">
+      <h4><a href="product-view.html">Structure material</a></h4>
+      <div className="product-varient">
+        <div className="product-varient-inner">
+          <label>Supplier:</label>
+          <div className="pvi-flex">
+            <p>Hempel</p>
+          </div>
+        </div>
+        <div className="product-varient-inner pvi-weight">
+          <label>Weight:</label>
+          <div className="pvi-flex">
+            <span>1x50 ML</span>
+            <span>1x50 ML</span>
+            <span>1x50 ML</span>
+          </div>
+        </div>
+        <div className="product-varient-inner">
+          <label>Unit Type:</label>
+          <div className="pvi-flex">
+            <p>Piece</p>
+          </div>
         </div>
       </div>
-      <div className="slide">
-        <img src="assets/images/banner2.png" alt="Banner 2" />
-        <div className="text-overlay">
-          <h1>ALL YOU NEED TO START <br/>YOUR DREAM HOME</h1>
-          <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat<br/>
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
-									consequat, vel illum dolore eu feugiat
-          </p>
-          <button className='b'>Start Shopping</button>
+      <div className="product-pricedata">
+        <div className="ppd-flex">
+          <button type="button" className="btn add-cartBtn" id="add_cartBtn">
+            <img src="assets/images/add-cart.png" alt="add cart icon"/>
+          </button>
+          <button type="button" className="btn add-favBtn" id="add_favBtn">
+            <i className="fa fa-star-o" aria-hidden="true"></i>
+          </button>
+          <div className="price-amount">
+            <div className="price-amountinner">
+              <span className="price-discount"><del>12.00</del> KD</span>
+              <span>12.00 KD</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="slide">
-        <img src="assets/images/banner.png" alt="Banner 3" />
-        <div className="text-overlay">
-          <h1>ALL YOU NEED TO START 
-          <br/>YOUR DREAM HOME</h1>
-          <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam<br/>
-									nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam <br/>
-									volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation<br/>
-									ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis<br/>
-									autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie<br/>
-									consequat, vel illum dolore eu feugiat
-          </p>
-          <button className='b'>Start Shopping</button>
-        </div>
-      </div>
-    </Carousel>
+    </div>
+  </div>
+
   );
 };
 
 export default Slider;
+

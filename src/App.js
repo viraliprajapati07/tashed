@@ -14,16 +14,39 @@ import Register from './Components/Register';
 import Payment from './Components/Payment';
 import Orderhistory  from './Components/Orderhistory'
 import Category from './Components/Category';
+import Orderlist from './Components/Orderlist';
+import Profileinfo from './Components/Profileinfo';
+import Address from './Components/Address';
+import Changepass from './Components/Changepass';
+import Orderview from './Components/Orderview';
+import Changename from './Components/Changename';
+import Changemail from './Components/Changemail';
+import Changephone from './Components/Changephone';
+import Editadd from './Components/Editadd';
+import Login from './Components/Login';
+import Forgotpass from './Components/Forgotpass';
 
 
 const App = () => {
   return (
+    
     <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/Categorylist' element= {<Categorylist/>}/>
         <Route path="/profile" element={<Profile />} />
+        <Route path="/Profileinfo" element={<Profileinfo />} />
+        <Route path="/Address" element={<Address />} />
+        <Route path="/Changepass" element={<Changepass />} />
+        <Route path="/Changename" element={<Changename />} />
+        <Route path="/Changephone" element={<Changephone />} />
+        <Route path="/Changemail" element={<Changemail />} />
+        <Route path="/Forgotpass" element={<Forgotpass />} />
+        <Route path="/Editadd" element={<Editadd />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Orderview" element={<Orderview />} />
+        <Route path="/Orderlist" element={<Orderlist />} />
         <Route path="/influencers" element={<Influencers />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
