@@ -66,13 +66,17 @@ const AutoSlider = () => {
       imgSrc: 'assets/images/cat-background.png',
       title: 'STRUCTURE MATERIAL',
     },
+    {
+      imgSrc: 'assets/images/cat-background.png',
+      title: 'STRUCTURE MATERIAL',
+    },
   ];
   const [activeSlide, setActiveSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000); 
 
     return () => clearInterval(interval);
   }, []);
