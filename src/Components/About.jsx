@@ -4,7 +4,6 @@ function About() {
 	return (
 		<>
 			<div className="wrapper">
-
 				<section className="middle-content">
 					<div className="middle-100vh-content">
 						<div className="cred-forms-logo cfl-absolute ab-logo">

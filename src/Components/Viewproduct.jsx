@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Card from './Product/Card'
 import { Link } from 'react-router-dom'
+import Links from './NavLinks/Links';
 function Viewproduct() {
     
     const [quantity, setQuantity] = useState(1);
@@ -23,11 +24,9 @@ function Viewproduct() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-12">
-                                    <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="category.html">Product</a></li>
-                                        <li>Product Name</li>
-                                    </ul>
+                                <Link to="/category">
+						        <Links linkName="Product" linkName2="View Product" />
+					            </Link>
                                 </div>
                             </div>
                         </div>

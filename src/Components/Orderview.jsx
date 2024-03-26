@@ -1,20 +1,10 @@
 import React from 'react'
+import Links from './NavLinks/Links'
 function Orderview() {
 	return (
 		<><div className="wrapper">
 			<section className="middle-content">
-				<div className="cs-breadcrumb comm-mob-sec">
-					<div className="container">
-						<div className="row">
-							<div className="col-12">
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li>Order View</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+			<Links linkName='Order View'/>
 				<div className="wishlist-sec order-viewsec">
 					<div className="container">
 						<div className="row">

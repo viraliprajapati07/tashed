@@ -1,8 +1,7 @@
 import React from 'react'
-
+import Number from './Contact/Number'
 function Footer() {
-  return (
-    <>
+  return ( <>
     <footer className="main-footer" id="contactus_sec">
                     <div className="mf-top">
                         <div className="container">
@@ -16,30 +15,10 @@ function Footer() {
                             <div className="row">
                                 <div className="col-12">
                                     <div className="mf-contactdata">
-                                        <div className="mfc-flex">
-                                            <div className="mfc-flexdata">
-                                                <h3>office number</h3>
-                                                <h4><a href="javascript:void(0)">6667388</a></h4>
-                                            </div>
-                                        </div>
-                                        <div className="mfc-flex">
-                                            <div className="mfc-flexdata">
-                                                <h3>office number</h3>
-                                                <h4><a href="javascript:void(0)">6667388</a></h4>
-                                            </div>
-                                        </div>
-                                        <div className="mfc-flex">
-                                            <div className="mfc-flexdata">
-                                                <h3>office number</h3>
-                                                <h4><a href="javascript:void(0)">6667388</a></h4>
-                                            </div>
-                                        </div>
-                                        <div className="mfc-flex">
-                                            <div className="mfc-flexdata">
-                                                <h3>office number</h3>
-                                                <h4><a href="javascript:void(0)">6667388</a></h4>
-                                            </div>
-                                        </div>
+                                        <Number/>
+                                        <Number/>
+                                        <Number/>
+                                        <Number/>
                                     </div>
                                     <div className="mfc-saperator">
                                         <div className="mfc-saperator-line"></div>
@@ -105,5 +84,4 @@ function Footer() {
     </>
   )
 }
-
 export default Footer

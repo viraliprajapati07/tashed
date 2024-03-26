@@ -1,25 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Links from './NavLinks/Links'
 function Profile() {
 	return (
 		<>
 			<div className="wrapper">
-				<section className="middle-content">
-					<div className="cs-breadcrumb comm-mob-sec">
-						<div className="container">
-							<div className="row">
-								<div className="col-12">
-									<ul>
-										<li><a href="index.html">Home</a></li>
-										<li>Profile</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
+			<section className="middle-content">
+				<Links linkName='profile'/>
 					<div className="main-profile-sec">
 						<div className="profile-sec-inner">
 							<div className="container">
+								
 								<div className="row">
 									<div className="col-lg-4 col-md-4 col-sm-6 col-12 mpsi-col">
 

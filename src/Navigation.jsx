@@ -36,6 +36,7 @@ const Navigation = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path='/categorylist' element= {<Categorylist/>}/>
         <Route path="/profile" element={<Profile />} />
         <Route path="/profileinfo" element={<Profileinfo />} />

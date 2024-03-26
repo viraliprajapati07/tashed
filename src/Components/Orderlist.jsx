@@ -1,21 +1,11 @@
 import React from 'react'
+import Links from './NavLinks/Links'
 import { Link } from 'react-router-dom'
 function Orderlist() {
 	return (
 		<><div className="wrapper">
 			<section className="middle-content">
-				<div className="cs-breadcrumb comm-mob-sec">
-					<div className="container">
-						<div className="row">
-							<div className="col-12">
-								<ul>
-									<li><a href="index.html">Home</a></li>
-									<li>Order List</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
+			<Links linkName='Order List'/>
 				<div className="wishlist-sec order-listsec">
 					<div className="container">
 						<div className="row comm-mob-sec">
