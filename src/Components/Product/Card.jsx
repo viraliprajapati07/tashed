@@ -11,41 +11,41 @@ function Card(props) {
                         <img src={props.productImage}/>
                     </div>
                     <div className="product-data">
-                        <h4><a href="product-view.html">{props.productName}</a></h4>
+                        <h4><Link to='/viewproduct'>{props.productName}</Link></h4>
                         <div className="product-varient">
                             <div className="product-varient-inner">
-                                <label>Suppler:</label>
+                                <label>{props.productlabel}</label>
                                 <div className="pvi-flex">
-                                    <p>Hempel</p>
+                                    <p>{props.productp}</p>
                                 </div>
                             </div>
                             <div className="product-varient-inner pvi-weight">
-                                <label>Weight:</label>
+                                <label>{props.weight}</label>
                                 <div className="pvi-flex">
-                                    <span>1x50 ML</span>
-                                    <span>1x50 ML</span>
-                                    <span>1x50 ML</span>
+                                    <span>{props.sp}</span>
+                                    <span>{props.sp}</span>
+                                    <span>{props.sp}</span>
                                 </div>
                             </div>
                             <div className="product-varient-inner">
-                                <label>Unit Type:</label>
+                                <label>{props.l}</label>
                                 <div className="pvi-flex">
-                                    <p>Piece</p>
+                                    <p>{props.para}</p>
                                 </div>
                             </div>
                         </div>
                         <div className="product-pricedata">
                             <div className="ppd-flex">
                                 <Link to='/Cart'><button type="button" className="btn add-cartBtn" id="add_cartBtn">
-                                    <img src="assets/images/add-cart.png" alt="add cart icon" />
+                                    <img src={props.iconimage} alt="add cart icon" />
                                 </button></Link>
                                 <button type="button" className="btn add-favBtn" id="add_favBtn">
-                                    <i className="fa fa-star-o" aria-hidden="true"></i>
+                                    <i className={props.star} aria-hidden="true"></i>
                                 </button>
                                 <div className="price-amount">
                                     <div className="price-amountinner">
-                                        <span className="price-discount"><del>12.00</del> KD</span>
-                                        <span>12.00 KD</span>
+                                        <span className="price-discount"><del>{props.del}</del>{props.ori}</span>
+                                        <span>{props.final}</span>
                                     </div>
                                 </div>
                             </div>

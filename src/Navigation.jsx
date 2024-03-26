@@ -26,6 +26,7 @@ import Editadd from './Components/Editadd';
 import Login from './Components/Login';
 import Forgotpass from './Components/Forgotpass';
 import Footer from './Components/Footer';
+import Viewproduct from './Components/Viewproduct';
 
 
 const Navigation = () => {
@@ -48,6 +49,7 @@ const Navigation = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/orderview" element={<Orderview />} />
         <Route path="/orderlist" element={<Orderlist />} />
+        <Route path="/viewproduct" element={<Viewproduct />} />
         <Route path="/influencers" element={<Influencers />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
